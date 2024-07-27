@@ -1,0 +1,17 @@
+@use "../../abstracts/" as *;
+
+.client{
+    @include flex-element('', 1.5rem);
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.client h1{
+    color: black;
+}
+
+.client img{
+    width: 21rem;
+    margin: 3rem  0;
+}

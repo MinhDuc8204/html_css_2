@@ -1,9 +1,11 @@
 @forward 'agency.scss';
+@forward 'client.scss';
 .container{
     background-image: url("../assets/images/mobile_bg.png");
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 .body-content{
-    padding: 2rem;
+    padding: 2.5rem;
 }

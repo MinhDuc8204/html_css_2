@@ -2,6 +2,7 @@
   font-size: $font-size;
   font-family: $font-family;
   color: $color;
+  flex-wrap: wrap;
 }
 
 @mixin flex-element($justify: space-between, $gap: 0) {
