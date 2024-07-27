@@ -1,2 +1,23 @@
 @forward 'reset';
 @forward 'typography';
+@use '../abstracts' as *;
+
+button{
+    width: fit-content;
+    background-color: $light-green;
+    border-radius: 1rem;
+    padding: 1rem;
+    @include font(1.8rem, $inter-semibold, black);
+    border: 2px solid $light-green
+}
+
+h1{
+    @include font(3.7rem, $inter-bold, white);
+    text-transform: uppercase;
+    align-content: center
+}
+
+p{
+    @include font(1.4rem, $inter-regula, $dark-gray);
+    line-height: 2rem;
+}

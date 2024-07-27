@@ -4,7 +4,6 @@ footer{
     background-color: black;
     color: white;
     text-align: left;
-    @include font(0.8rem, $inter-regula);
 }
 
 footer .body-content{
@@ -20,11 +19,11 @@ footer .main-item{
 }
 
 footer .main-item h1{
-    @include font(1.8rem, $inter-bold);
-    
+    font-size: 1.8rem;
 }
 
-footer .main-item p{
+footer .main-item>p{
+    @include font(0.8rem, $inter-regula);
     line-height: 1rem
 }
 
@@ -39,7 +38,7 @@ footer .list-item{
 }
 
 footer .list-item h1{
-    @include font(1.3rem, $inter-bold);
+    font-size: 1.3rem;
 }
 
 footer .body-content > p{

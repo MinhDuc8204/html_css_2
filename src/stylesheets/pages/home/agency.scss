@@ -1,9 +1,43 @@
 @use "../../abstracts/" as *;
 
-.agency .main-text{
-    @include font(3.7rem, $inter-bold, white);
+.agency{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 3rem;
 }
 
-.agency .main-text span{
+.agency h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.agency h1 span{
     color: $light-green;
+}
+
+.agency p{
+    @include font(1.4rem, $inter-regula, $gray);
+}
+
+.agency img{
+    padding: 3rem 2rem;
+    // grid-column: 2/2;
+    // grid-row: 1/4;
+
+}
+
+.agency button{
+    width: 20rem;
+    padding: 2rem 0;
+}
+.agency button:last-child{
+    background: transparent;
+    color: white;
+    margin-bottom: 10rem;
 }
