@@ -1,0 +1,8 @@
+@forward 'home';
+@use '../abstracts' as *;
+
+button{
+    background-color: $light-green;
+    border-radius: 1rem;
+    padding: 1rem;
+}

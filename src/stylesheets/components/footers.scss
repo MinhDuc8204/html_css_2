@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+footer .list-item ul{
+    @include flex-element(start, 2.5rem);
+    flex-direction: column;
+}

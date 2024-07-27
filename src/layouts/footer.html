@@ -1,0 +1,44 @@
+<footer>
+    <div class="body-content">
+        <div class="main-item">
+            <h1>Digitrend</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum  Sed ornare cursus sed nunc eget dictumd nunc eget dictum  Sed ornare cursus sed nunc eget dictum</p>
+            <ul>
+                <li><img src="../../assets/icons/link-in_ic.svg" alt="linkin"></li>
+                <li><img src="../../assets/icons/x_ic.svg" alt="x"></li>
+                <li><img src="../../assets/icons/instagram_ic.svg" alt="instagram"></li>
+                <li><img src="../../assets/icons/behance_ic.svg" alt="behance"></li>
+            </ul>
+        </div>
+        <div class="list-item">
+            <h1>Services</h1>
+            <include
+                src = "./components/footers.html"
+                locals = '{
+                    "footers": "[`SEO`, `Email Marketing`, `Digital Marketing`, `Content Writing`]"
+                }'
+            ></include>
+        </div>
+        <div class="list-item">
+            <h1>Packages</h1>
+            <include
+                src = "./components/footers.html"
+                locals = '{
+                    "footers": "[`Bsic`, `Premium`, `Diamond`, `Platinum`]"
+                }'
+            ></include>
+        </div>
+        <div class="list-item">
+            <h1>About</h1>
+            <include
+                src = "./components/footers.html"
+                locals = '{
+                    "footers": "[`Digital Agency`, `Explore`, `Contact`, `Career`]"
+                }'
+            ></include>
+        </div>
+        <p>
+            All copy rights reserved 2024 . Designed By <span>Shahzaib R</span>.
+        </p>
+    </div>
+</footer>

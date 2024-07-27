@@ -1,0 +1,9 @@
+@use "../../abstracts/" as *;
+
+.agency .main-text{
+    @include font(3.7rem, $inter-bold, white);
+}
+
+.agency .main-text span{
+    color: $light-green;
+}

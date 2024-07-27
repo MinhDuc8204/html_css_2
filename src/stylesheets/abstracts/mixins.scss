@@ -1,0 +1,34 @@
+@mixin font($font-size, $font-family: $inter-medium, $color: white) {
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin flex-element($justify: space-between, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin between() {
+  display: flex;
+  justify-content: space-between;
+  @content;
+}
+
+@mixin gradient(){
+  background: linear-gradient(90deg, #6F48FC 21.63%, #D07EF7 60.55%, #56C6E7 79.11%);
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin blackbutton{
+  background-color: #252739;
+  color: white;
+  border: 4px solid #454545ce;
+  padding: 15px 35px;
+}
+
+@mixin shadow{
+  box-shadow: 10px 20px 50px 10px #0000001A;
+}

@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+header{
+  @include flex-element();
+  padding: 3rem 0;
+}
+
+.header-left{
+  border-radius: 0.5rem;
+}
+
+.header-mid{
+  @include font(2.4rem, $inter-bold);
+  text-transform: uppercase;
+}

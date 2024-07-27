@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: left;
+    @include font(0.8rem, $inter-regula);
+}
+
+footer .body-content{
+    @include flex-element();
+    flex-wrap: wrap;
+}
+
+footer .main-item{
+    width: 11.5rem;
+    @include flex-element();
+    flex-direction: column;
+    
+}
+
+footer .main-item h1{
+    @include font(1.8rem, $inter-bold);
+    
+}
+
+footer .main-item p{
+    line-height: 1rem
+}
+
+footer .main-item ul{
+    @include flex-element(start, 1.8rem);
+}
+
+footer .list-item{
+    @include flex-element('', 1.5rem);
+    flex-direction: column;
+    @include font(0.8rem, $inter-medium);
+}
+
+footer .list-item h1{
+    @include font(1.3rem, $inter-bold);
+}
+
+footer .body-content > p{
+    width: 100%;
+    @include font(0.8rem, $inter-regula);
+    margin: 3rem 0;
+}
+
+footer .body-content > p > span {
+    @include font(0.7rem, $inter-bold)
+}
