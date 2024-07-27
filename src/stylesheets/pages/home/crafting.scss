@@ -1,0 +1,37 @@
+@use '../../abstracts' as *;
+
+.crafting{
+    background-color: $lighter-green;
+    padding: 3rem 0;
+}
+
+.crafting .body-content{
+    @include flex-element();
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.crafting h1{
+    color: black;
+}
+
+.crafting p{
+    font-size: 1.8rem;
+}
+
+.crafting .body-content>div{
+    background-image: url("../assets/images/crafting.png");
+    background-size: cover;
+    margin: 5rem 0;
+    box-shadow: 0px 0px 20px 5px #00000052;
+}
+
+.crafting .body-content>div>div{
+    background-color: #455A6459;
+    padding: 10rem 14rem;    
+}
+
+.crafting button{
+    padding: 2rem 3.4rem;
+}
