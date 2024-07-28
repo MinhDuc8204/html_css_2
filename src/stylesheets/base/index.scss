@@ -17,6 +17,12 @@ h1{
     align-content: center
 }
 
+h2{
+    @include font(3.6rem, $inter-bold, black);
+    text-transform: capitalize;
+    align-content: center
+}
+
 p{
     @include font(1.4rem, $inter-regula, $dark-gray);
     line-height: 2rem;

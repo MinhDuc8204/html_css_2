@@ -7,7 +7,7 @@
         <button>Explore more</button>
     </div>    
     <div class="client">
-        <h1>OUR CLIENTS</h1>
+        <h2>OUR CLIENTS</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
         <img src="../../assets/icons/airnbn_ic.svg" alt="">
         <img src="../../assets/icons/github_ic.svg" alt="">
@@ -17,7 +17,7 @@
 </div>
 <div class="crafting">
     <div class="body-content">
-        <h1>Crafting Digital Brilliance Explore Our Methodology</h1>
+        <h2>Crafting Digital Brilliance Explore Our Methodology</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Semper a inter</p>
         <div>
             <div><img src="../../assets/icons/play_ic.svg" alt=""></div>
@@ -27,7 +27,7 @@
 </div>
 <div class="body-content">
     <div class="service">
-        <h1>Our Services</h1>
+        <h2>Our Services</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
         <div>
             <include
@@ -52,6 +52,38 @@
                     "image": "content_ic.svg",
                     "title": "Content Writing",
                     "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper. Lorem ipsum dolor sit"
+                }'
+            ></include>
+        </div>
+    </div>
+</div>
+<div class="plan">
+    <div class="body-content">
+        <h2>Choose Our Plan </h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+        <div>
+            <include
+                src = './components/plan-card.html'
+                locals = '{
+                    "title": "Free",
+                    "price": "0",
+                    "contents": "[`1 user request`,`1 design account`,`Email support`,`10 deployment`]"
+                }'
+            ></include>
+            <include
+                src = './components/plan-card.html'
+                locals = '{
+                    "title": "Premium",
+                    "price": "55",
+                    "contents": "[`10 user request`,`3 design account`,`Email support`,`100 deployment`,`24/7 Support`, `Premium Support`]"
+                }'
+            ></include>
+            <include
+                src = './components/plan-card.html'
+                locals = '{
+                    "title": "Enterprise",
+                    "price": "105",
+                    "contents": "[`Unlimited user request`,`3 to 50 design account`,`Email support`,`Unlimited deployment`,`24/7 Support`,`Advanced security`]"
                 }'
             ></include>
         </div>

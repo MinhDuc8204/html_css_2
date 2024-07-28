@@ -1,0 +1,24 @@
+@use '../../abstracts' as *;
+
+.plan{
+    background-color: $lighter-green;
+    padding: 4rem 0 8rem 0;
+    
+}
+
+.plan > div {
+    @include flex-element('', 2rem);
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan h1{
+    color: black;
+    text-transform: capitalize;
+}
+
+.plan > div > div{
+    @include flex-element('', 2rem);
+    flex-direction: column;
+    align-items: center;
+}
