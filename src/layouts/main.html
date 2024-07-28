@@ -25,3 +25,35 @@
         <button>CONTACT US</button>
     </div>
 </div>
+<div class="body-content">
+    <div class="service">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+        <div>
+            <include
+                src = "./components/service-card.html"
+                locals = '{
+                    "image": "seo_ic.svg",
+                    "title": "SEO Consultancy",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper. Lorem ipsum dolor sit"
+                }'
+            ></include>
+            <include
+                src = "./components/service-card.html"
+                locals = '{
+                    "image": "marketing_ic.svg",
+                    "title": "Digital Marketing",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper. Lorem ipsum dolor sit"
+                }'
+            ></include>
+            <include
+                src = "./components/service-card.html"
+                locals = '{
+                    "image": "content_ic.svg",
+                    "title": "Content Writing",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper. Lorem ipsum dolor sit"
+                }'
+            ></include>
+        </div>
+    </div>
+</div>

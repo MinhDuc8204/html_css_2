@@ -1,0 +1,16 @@
+@use '../../abstracts' as *;
+
+.service{
+    @include flex-element("", 2rem);
+    flex-direction: column;
+}
+
+.service h1{
+    color: black;
+}
+
+.service>div{
+    padding: 2rem 4.5rem;
+    @include flex-element('', 2rem);
+    flex-wrap: wrap;
+}
