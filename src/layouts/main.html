@@ -1,11 +1,4 @@
 <div class="body-content">
-    <div class="agency">
-        <h1>Your Trusted Digital <span>Agency</span> Partner</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
-        <img src="../../assets/icons/agency_ic.svg" alt="agency">
-        <button>Get Started</button>
-        <button>Explore more</button>
-    </div>    
     <div class="client">
         <h2>OUR CLIENTS</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
@@ -84,6 +77,38 @@
                     "title": "Enterprise",
                     "price": "105",
                     "contents": "[`Unlimited user request`,`3 to 50 design account`,`Email support`,`Unlimited deployment`,`24/7 Support`,`Advanced security`]"
+                }'
+            ></include>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <div class="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+        <div>
+            <include
+                src = './components/portfolio-card.html'
+                locals = '{
+                    "image": "our4.png",
+                    "title": "Website Dashboard Design ",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum p"
+                }'
+            ></include>
+            <include
+                src = './components/portfolio-card.html'
+                locals = '{
+                    "image": "our2.png",
+                    "title": "Website Dashboard Design ",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum p"
+                }'
+            ></include>
+            <include
+                src = './components/portfolio-card.html'
+                locals = '{
+                    "image": "our3.png",
+                    "title": "Website Dashboard Design ",
+                    "descript": "Lorem ipsum dolor sit amet consectetur. Semper a interdum p"
                 }'
             ></include>
         </div>

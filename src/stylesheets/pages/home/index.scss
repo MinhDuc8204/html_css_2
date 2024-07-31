@@ -3,12 +3,29 @@
 @forward 'crafting.scss';
 @forward 'service.scss';
 @forward 'plan.scss';
+@forward 'portfolio.scss';
+@use "../../abstracts" as *;
+
 .container{
-    background-image: url("../assets/images/mobile_bg.png");
     text-align: center;
     background-repeat: no-repeat;
+    background-size: 100% 100rem;
 }
 
 .body-content{
     padding: 2.5rem;
+    
+}
+
+.first-image{
+    border-radius: 0 0 0 20%;
+    clip-path: polygon(100.1% 0%, 100.1% 89.3%, 23.2% 100.3%, 0% 100.3%, 0% 0%);
+    background: linear-gradient(275deg, #073340 1.31%, #659365 120.07%);
+}
+
+@include md{
+    .first-image{
+        border-radius: 0 0 0 9rem;
+        clip-path: polygon(100.1% 0%, 100.1% 93%, 20.1% 100.3%, 0% 100.3%, 0% 0%);
+    }
 }
