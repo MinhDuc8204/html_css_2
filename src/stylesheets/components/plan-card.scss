@@ -61,6 +61,10 @@
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7444%) hue-rotate(10deg) brightness(100%) contrast(97%);
 }
 
+.plan-card:nth-child(2) h4 span{
+    color: white;
+}
+
 .plan-card button{
     padding: 1.8rem 4rem;
 }

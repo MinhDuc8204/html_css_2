@@ -1,4 +1,16 @@
 @use '../../abstracts' as *;
 
 .portfolio{
+    @include flex-element(space-around, 2rem);
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.portfolio > div{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 23rem);
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
 }
