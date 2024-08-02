@@ -1,0 +1,60 @@
+@use '../../abstracts' as *;
+
+.contact{
+    background-color: $lighter-green;
+    padding: 4rem 0;
+}
+
+.contact > div {
+    @include flex-element('', 3.5rem);
+    flex-direction: column;
+}
+
+.contact .information{
+    background: linear-gradient(90deg, #164246 0%, #629064 100%);
+    border-radius: 1rem;
+    padding: 4rem 0;
+    @include flex-element('', 4rem);
+    flex-direction: column;
+    align-items: center
+}
+
+.contact .information > div{
+    @include flex-element('', 8rem);
+    flex-direction: column;
+}
+
+.contact .form-input{
+    @include flex-element(center, 3rem);
+    flex-wrap: wrap;
+}
+
+.form-input input, 
+.form-input textarea {
+    width: 100%;
+    @include font(1.8rem, $inter-bold, $dark-gray);
+    padding: 1.3rem 1.8rem;
+    background: linear-gradient(rgb(231, 250, 222),rgb(231, 250, 222)) padding-box,
+    linear-gradient(180deg, #659365 0%, #184447 100%) border-box;
+    border-radius: 8.5rem;
+    border: 3px solid transparent;
+}
+
+.form-input input:focus, 
+.form-input textarea:focus {
+    outline: none;
+}
+
+.form-input input:nth-child(1),
+.form-input input:nth-child(2){
+    width: 46%;
+}
+
+.form-input textarea{
+    height: 15rem;
+    border-radius: 2rem;
+}
+
+.form-input button{
+    padding: 1rem 1.5rem;
+}

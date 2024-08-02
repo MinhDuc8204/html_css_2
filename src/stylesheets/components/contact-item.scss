@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.contact-item{
+    @include flex-element('',2rem);
+    color: white;
+    padding: 0 1.5rem;
+}
+
+.contact-item div{
+    width: 3rem;
+    @include flex-element(center, 0);    
+}
+
+.contact-item h5{
+    @include font(1.7rem, $inter-bold);
+    align-content: center;
+    line-height: 2rem;
+}
