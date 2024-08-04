@@ -1,17 +1,32 @@
 @use "../../abstracts/" as *;
 
 .client{
-    @include flex-element('', 1.5rem);
-    align-items: center;
-    flex-direction: column;
+    @include flex-element(center, 1.5rem);
+    flex-direction: column;    
     margin: 5rem 0;
 }
 
-.client h1{
-    color: black;
+.client > div{
+    @include flex-element();
+    flex-wrap: wrap;    
+    margin: 2rem 0;
+
+    @include sm{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.client h2, .client p{
+    width: 45%;
+    margin: auto;
+
+    @include md{
+        width: 85%;
+    }
 }
 
 .client img{
     width: 21rem;
-    margin: 3rem  0;
+    margin: 3rem auto;
 }

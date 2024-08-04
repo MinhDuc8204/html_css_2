@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.header-item{
+    @include flex-element('', 3.5rem);
+    @include font(2.2rem, $inter-medium);
+    align-content: center;
+
+    @include lg{
+        font-size: 1.8rem;
+    }
+
+    @include md{
+        display: none;
+    }
+}
+
+.header-item li:nth-child(1){
+    @include font(2.2rem, $inter-bold, $light-green);
+
+    @include lg{
+        font-size: 1.8rem;
+    }
+}

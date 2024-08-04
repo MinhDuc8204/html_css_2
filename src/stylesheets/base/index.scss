@@ -3,27 +3,41 @@
 @use '../abstracts' as *;
 
 button{
-    width: fit-content;
+    width: 19rem;
+    height: 6rem;
     background-color: $light-green;
     border-radius: 1rem;
-    padding: 1rem;
     @include font(1.8rem, $inter-semibold, black);
-    border: 2px solid $light-green
+    border: 2px solid $light-green;
 }
 
 h1{
-    @include font(3.7rem, $inter-bold, white);
+    @include font(5.4rem, $inter-bold, white);
+    line-height: 6rem;
     text-transform: uppercase;
-    align-content: center
+    align-content: center;
 }
 
 h2{
-    @include font(3.6rem, $inter-bold, black);
+    @include font(4.8rem, $inter-bold, black);
     text-transform: capitalize;
     align-content: center
 }
 
 p{
-    @include font(1.4rem, $inter-regula, $dark-gray);
+    @include font(1.8rem, $inter-regula, $dark-gray);
     line-height: 2rem;
+}
+
+@include sm{
+    h1{
+        font-size: 3.7rem;
+        line-height: 4rem;
+    }
+    h2{
+        font-size: 3.6rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
 }

@@ -7,15 +7,16 @@
 @forward 'contact.scss';
 @use "../../abstracts" as *;
 
-.container{
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100rem;
-}
-
 .body-content{
-    padding: 2.5rem;
-    
+    padding: 2.5rem 15rem ;
+    text-align: center;
+    @include lg{
+        padding: 2.5rem 5rem ;
+    }
+    @include sm{
+        padding: 2.5rem;
+    }
+
 }
 
 .first-image{
