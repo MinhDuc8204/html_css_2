@@ -18,7 +18,11 @@
 }
 
 .plan > div > div{
-    @include flex-element('', 2.5rem);
-    flex-direction: column;
+    width: 100%;
+    @include flex-element();
     align-items: center;
+    @include md{
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
