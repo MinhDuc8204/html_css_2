@@ -6,32 +6,47 @@
 }
 
 .contact > div {
-    @include flex-element('', 3.5rem);
-    flex-direction: column;
+    padding: 0;
+    @include sm{
+        padding: 3rem 2.5rem;
+    }
+}
+
+.contact h2{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.contact > div {
+    @include flex-element(space-between, 3.5rem);
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .contact .information{
+    max-width: 45rem;
+    width: 45rem;
     background: linear-gradient(90deg, #164246 0%, #629064 100%);
     border-radius: 1rem;
-    padding: 4rem 0;
-    @include flex-element('', 4rem);
+    padding: 8rem 0;
+    @include flex-element(center, 8rem);
     flex-direction: column;
-    align-items: center
-}
+    margin: 0 auto;
 
-.contact .information > div{
-    @include flex-element('', 8rem);
-    flex-direction: column;
+    
 }
 
 .contact .form-input{
-    @include flex-element(center, 3rem);
+    max-width: 45rem;
+    @include flex-element(center, 2rem);
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .form-input input, 
 .form-input textarea {
     width: 100%;
+    height: 6rem;
     @include font(1.8rem, $inter-bold, $dark-gray);
     padding: 1.3rem 1.8rem;
     background: linear-gradient(rgb(231, 250, 222),rgb(231, 250, 222)) padding-box,

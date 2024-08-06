@@ -1,16 +1,28 @@
 @use '../../abstracts' as *;
 
-.portfolio{
+.portfolio > div{
     @include flex-element(space-around, 2rem);
     flex-direction: column;
-    padding-top: 3rem;
+    padding: 3rem 0;
+    @include md{
+        padding: 3rem 2.5rem;
+    }
 }
 
-.portfolio > div{
+.portfolio > div > div{
+    width: 100%;
+    max-height: 69rem;
     display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(5, 23rem);
+    grid-template-columns: repeat(6, calc(100%/6));
+    grid-template-rows: repeat(3, calc(100%/3));
+    justify-items: center;
     justify-content: center;
-    gap: 2rem;
     margin: 4rem 0;
+
+    @include md{
+        max-height: fit-content;
+        grid-template-columns: calc(100%);
+        grid-template-rows: repeat(5, 23rem);
+        gap: 2rem;
+    }
 }

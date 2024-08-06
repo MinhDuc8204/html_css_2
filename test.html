@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 150px;
+            background-color: lightgrey;
+            position: relative;
+            overflow: hidden; /* Đảm bảo phần tử con sẽ không tràn ra ngoài thẻ cha */
+        }
+
+        .child {
+            flex: 0 0 150px; /* Đảm bảo phần tử con không co giãn */
+            height: 150px;
+            background-color: red;
+            transition: transform 0.5s, z-index 0.5s;
+        }
+
+        .child2 {
+            background-color: blue;
+        }
+
+        @media (max-width: 300px) {
+            .child, .child2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+            }
+
+            .child {
+                transform: translateX(0);
+                z-index: 1;
+            }
+
+            .child2 {
+                transform: translateX(50px);
+                z-index: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child child2"></div>
+    </div>
+</body>
+</html>

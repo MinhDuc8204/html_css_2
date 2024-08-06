@@ -4,6 +4,7 @@
     @include flex-element('', 2rem);
     flex-direction: column;
     align-items: center;
+    margin: 3rem 0;
 }
 
 .service>div{
@@ -11,8 +12,8 @@
     padding: 2rem 4.5rem;
     @include flex-element();
     align-items: center;
+    flex-wrap: wrap;
     @include md{
-        
         flex-direction: column;
         gap: 2rem;
     }

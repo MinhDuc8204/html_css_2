@@ -2,7 +2,8 @@
 
 .plan-card{
     width: calc(100%/3);
-    min-width: 30rem;
+    max-width: 40rem;
+    min-width: 35rem;
     @include flex-element('', 4rem);
     flex-direction: column;
     align-items: center;
@@ -12,13 +13,20 @@
     padding: 3.5rem;
     background-color: white;
     color: black;
+
+    position: relative;
+    z-index: 1;
+
+    @include sm{
+        min-width: 30rem;
+    }
 }
 
 .plan-card:nth-child(2){
     color: white;
     background: linear-gradient(195.44deg, #073340 3.29%, #659365 100%);
     border: none;
-
+    z-index: 2;
 }
 
 .plan-card:nth-child(3){
