@@ -1,9 +1,14 @@
 @use '../abstracts' as *;
 
 .contact-item{
+    width: 40rem;
     @include flex-element('',2rem);
     color: white;
     padding: 0 1.5rem;
+    @include sm{
+        width: 34rem;
+        gap: 1rem;
+    }
 }
 
 .contact-item div{

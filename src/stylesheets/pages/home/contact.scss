@@ -2,7 +2,7 @@
 
 .contact{
     background-color: $lighter-green;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .contact > div {
@@ -12,28 +12,44 @@
     }
 }
 
-.contact h2{
+.contact > div > h2{
     width: 100%;
     margin: 3rem 0;
+    @include md{
+        display: none
+    }
 }
 
-.contact > div {
+.contact > div{
     @include flex-element(space-between, 3.5rem);
     flex-wrap: wrap;
     align-items: center;
+    @include md{
+        flex-direction: column-reverse;
+    }
 }
 
 .contact .information{
-    max-width: 45rem;
     width: 45rem;
     background: linear-gradient(90deg, #164246 0%, #629064 100%);
     border-radius: 1rem;
     padding: 8rem 0;
     @include flex-element(center, 8rem);
+    align-items: center;
     flex-direction: column;
     margin: 0 auto;
+    @include sm{
+        width: 36rem;
+    }
+}
 
-    
+.contact .information h2{
+    display: none;
+    color: white;
+    margin: 0;
+    @include md{
+        display: block;
+    }
 }
 
 .contact .form-input{

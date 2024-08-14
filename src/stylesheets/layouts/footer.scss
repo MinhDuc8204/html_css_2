@@ -3,7 +3,7 @@
 footer{
     background-color: black;
     color: white;
-    text-align: left;
+    padding: 3rem 0;
 }
 
 footer .body-content{
@@ -12,19 +12,37 @@ footer .body-content{
 }
 
 footer .main-item{
-    width: 11.5rem;
-    @include flex-element();
+    width: 44rem;
+    @include flex-element('', 3rem);
     flex-direction: column;
-    
+    text-align: left;
+
+    @include md{
+        width: 23rem;
+    }
+
+    @include sm{
+        width: 12rem;
+    }
 }
 
-footer .main-item h1{
-    font-size: 1.8rem;
+footer .main-item h2{
+    color: white;
+    @include sm{
+        font-size: 1.8rem;
+    }
 }
 
 footer .main-item>p{
-    @include font(0.8rem, $inter-regula);
-    line-height: 1rem
+    @include font(1.8rem, $inter-regula);
+    @include md{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+    @include sm{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
 }
 
 footer .main-item ul{
@@ -34,11 +52,21 @@ footer .main-item ul{
 footer .list-item{
     @include flex-element('', 1.5rem);
     flex-direction: column;
-    @include font(0.8rem, $inter-medium);
+    @include font(1.6rem, $inter-medium);
+    text-align: left;
+    @include md{
+        font-size: 1.1rem
+    }
+    @include sm{
+        font-size: .8rem
+    }
 }
 
-footer .list-item h1{
-    font-size: 1.3rem;
+footer .list-item h3{
+    font-size: 2.4rem;
+    @include md{
+        font-size: 1.3rem
+    }
 }
 
 footer .body-content > p{
